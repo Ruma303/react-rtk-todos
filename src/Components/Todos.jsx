@@ -14,12 +14,12 @@ const Todos = () => {
         <div className='todo-items'>
             <ul>
                 {todos.map((todo) => (
-                    <li className='' key={todo.id}>
-                        <p>{todo.title}</p>
+                    <li className='todo-item' key={todo.id}>
+                        <p className='todo-title'>{todo.title}</p>
                         <button
                             onClick={() => removeTodoHandler(todo.id)}
                             className='btn btn-danger'
-                        >Delete todo</button>
+                        >Done</button>
                     </li>
                 ))}
             </ul>
